@@ -59,7 +59,7 @@ The system looks as follows:
 2. SEEK advertisement to JazzHR job mapping via job title may be unreliable. Edge cases need to be accounted for:
     - When the job title in SEEK email not found in JazzHR
     - When the job title in SEEK email has multiple matches in JazzHR
-3. Lower system reliability from increased number of components 
+3. More components, increasing complexity
 
 # Alternative solution 1 - seek2jazz via SEEK API
 
@@ -81,8 +81,9 @@ This system looks as follows:
 5. No need to setup an email for seek2jazz
 
 ## Disadvantages
-1. Code maintainers will need to be familiar with an additional API
-2. Code will need to be updated when SEEK API changes
+- Harder to setup gradual rollout at an SEEK advertisement level 
+- Code maintainers will need to be familiar with an additional API
+- Code will need to be updated when SEEK API changes
 
 
 # Alternative solution 2 - Request fix from JazzHR
